@@ -1,5 +1,9 @@
-import Plot from 'react-plotly.js';
-import CurrPlot from './CurrPlot'
+import Plotly from "plotly.js-basic-dist";
+import createPlotlyComponent from "react-plotly.js/factory";
+import CurrPlot from './CurrPlot';
+
+const Plot = createPlotlyComponent(Plotly);
+
 function Plots(props) {
 
     return (
