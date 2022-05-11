@@ -1,0 +1,70 @@
+body {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+.header {
+	padding: 5px;
+	text-align: center;
+	color: black;
+	font-size: 30px;
+  }
+
+.plots {
+	margin: auto;
+}
+
+.params {
+	float: left;
+	margin-right: 40px;
+	margin-top: 60px;
+	margin-left: 0px;
+}
+
+input[type=number] {
+	border: 1.5px solid;
+	border-radius: 9px;
+	width: 60px;
+	padding: 5px;
+	-moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]:focus {
+	border: 1.5px solid #555;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.inputs {
+	margin-bottom: 10px;
+}
+
+.button3{
+	padding:0.3em 1.2em;
+	margin:0.6em 0.3em 0.3em 0.8em;
+	float: right;
+	border-radius:2em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-weight: bold;
+	color: white;
+	background-color:#4eb5f1;
+	text-align:center;
+	transition: all 0.2s;
+}
+
+.button3:hover{
+	background-color:#4095c6;
+}
