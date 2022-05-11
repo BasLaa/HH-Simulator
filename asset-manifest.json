@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/HH-Simulator/static/css/main.480be036.css",
-    "main.js": "/HH-Simulator/static/js/main.ef9715d3.js",
+    "main.css": "/HH-Simulator/static/css/main.a8dc578e.css",
+    "main.js": "/HH-Simulator/static/js/main.ef602546.js",
     "index.html": "/HH-Simulator/index.html",
-    "main.480be036.css.map": "/HH-Simulator/static/css/main.480be036.css.map",
-    "main.ef9715d3.js.map": "/HH-Simulator/static/js/main.ef9715d3.js.map"
+    "main.a8dc578e.css.map": "/HH-Simulator/static/css/main.a8dc578e.css.map",
+    "main.ef602546.js.map": "/HH-Simulator/static/js/main.ef602546.js.map"
   },
   "entrypoints": [
-    "static/css/main.480be036.css",
-    "static/js/main.ef9715d3.js"
+    "static/css/main.a8dc578e.css",
+    "static/js/main.ef602546.js"
   ]
 }
