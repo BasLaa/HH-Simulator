@@ -4,7 +4,6 @@ function App() {
 
   return (
     <div>
-      <Parent />
       <h2>Hello</h2>
     </div>
   );
