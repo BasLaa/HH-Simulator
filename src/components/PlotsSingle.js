@@ -1,19 +1,11 @@
 import Plot from 'react-plotly.js';
-
+import CurrPlot from './CurrPlot'
 function Plots(props) {
 
     return (
-        <div class="plots">
-                <Plot
-                data={[
-                    {
-                    x: props.data.ts,
-                    y: props.data.I,
-                    },
-                ]}
-                layout={ {width: 500, height: 250, title: 'Input Current', yaxis: {title: {text: "Current (\u03BCA)"}, range: [0, 50]}, margin: {t: 40, b: 40}} }
-                />
-            
+        <div className="plots">
+                
+                <CurrPlot ts={props.data.ts} I={props.data.I} />
                 <Plot
                 data={[
                     {
@@ -22,7 +14,7 @@ function Plots(props) {
                     marker: {color: 'red'},
                     },
                 ]}
-                layout={ {width: 500, height: 250, title: 'Voltage', margin: {t: 40, b: 40}, yaxis: {title: {text: "Voltage (mV)"}}} }
+                layout={ {width: 500, height: 250, title: '<b>Voltage</b>', margin: {t: 40, b: 40}, yaxis: {title: {text: "<b>Voltage (mV)</b>"}}} }
                 />
 
                 <Plot
@@ -30,20 +22,20 @@ function Plots(props) {
                     {
                         x: props.data.ts,
                         y: props.data.n,
-                        name: 'n',
+                        name: '<b>n</b>',
                     },
                     {
                         x: props.data.ts,
                         y: props.data.m,
-                        name: 'm',
+                        name: '<b>m</b>',
                     },
                     {
                         x: props.data.ts,
                         y: props.data.h,
-                        name: 'h',
+                        name: '<b>h</b>',
                     }
                 ]}
-                layout={ {width: 500, height: 250, title: 'Gating Parameters', margin: {t: 40, b: 40}} }
+                layout={ {width: 500, height: 250, title: '<b>Gating Parameters</b>', margin: {t: 40, b: 40}} }
                 />
         
                 <Plot
@@ -51,15 +43,15 @@ function Plots(props) {
                         {
                             x: props.data.ts,
                             y: props.data.GNa,
-                            name: 'G'+'Na'.sub()
+                            name: '<b>G'+'Na'.sub()+'</b>'
                         },
                         {
                             x: props.data.ts,
                             y: props.data.GK,
-                            name: "G"+"K".sub()
+                            name: "<b>G"+"K".sub()+'</b>'
                         },
                     ]}
-                    layout={ {width: 500, height: 250, title: 'Conductances', margin: {t: 40, b: 40}} }
+                    layout={ {width: 500, height: 250, title: '<b>Conductances</b>', margin: {t: 40, b: 40}} }
                     />
         </div>
       );

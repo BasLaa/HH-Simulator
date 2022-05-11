@@ -2,22 +2,38 @@ body {
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
 }
 
+
 .header {
-	padding: 5px;
+	padding: 0px;
 	text-align: center;
 	color: black;
 	font-size: 30px;
-  }
+}
 
 .plots {
 	margin: auto;
 }
 
+.plots-coupled {
+	margin: auto;
+}
+
+.mt {
+	opacity: 0;
+}
+
 .params {
 	float: left;
 	margin-right: 40px;
-	margin-top: 60px;
+	margin-top: 25px;
 	margin-left: 0px;
+}
+
+select {
+	position: relative;
+	top: 0px;
+	left: 50px;
+	padding: 5px;
 }
 
 input[type=number] {

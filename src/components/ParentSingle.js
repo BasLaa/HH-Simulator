@@ -2,9 +2,9 @@ import {useState, useEffect} from 'react';
 import {solve} from '../sim';
 import SimB from './SimB';
 import SimParam from './SimParam'
-import Plots from './Plots'
+import Plots from './PlotsSingle'
 
-function Parent() {
+function ParentSingle() {
     const [params, setParams] = useState(
         {t: 150, gK: 36, gNa: 120, gL: 0.3, VK: -12, VNa: 115, VL: 10.613, Cm: 1.0, Iin: 10}
     );
@@ -56,9 +56,8 @@ function Parent() {
 
     return (
         <div>
-            <h2 class="header">Hodgkin-Huxley Model</h2>
             <div className="params">
-                <SimParam onChange={handleChange} vals={params} />
+                <SimParam onChange={handleChange} vals={params} type="single"/>
                 <SimB onClick={reSimulate} />
             </div>
             <Plots data={data} params={params} />
@@ -66,4 +65,4 @@ function Parent() {
      );
 }
 
-export default Parent;
+export default ParentSingle;
